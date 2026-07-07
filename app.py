@@ -63,7 +63,7 @@ def summarize_stock_data(stock_data_text):
     if not stock_data_text:
         return "요약할 데이터가 없습니다."
 
-    model = ChatOpenAI(model="gpt-4o-mini", temperature=0)
+    model = ChatOpenAI(model="gpt-5.5", temperature=0)
 
     prompt = ChatPromptTemplate.from_messages([
         ("system", "당신은 주식 시장 데이터를 분석하고 요약하는 금융 전문가입니다. 제공된 데이터를 바탕으로 현재 시장의 주요 특징을 요약해 주세요."),
